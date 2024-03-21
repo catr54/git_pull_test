@@ -5,9 +5,10 @@ public class Test {
         String s = s1 + " " + s2 + "!";
         System.out.println(s);
         int q = -1000;
-        for(int i=1;i<=50;i++){
+        System.out.println(q + "    " + Integer.toBinaryString(q));
+        for(int i=1;i<=70;i++){
             int x = q >>> i;
-            System.out.println(x);
+            System.out.println(x + "      " + Integer.toBinaryString(x));
         }
     }
 }
