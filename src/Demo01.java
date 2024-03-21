@@ -4,6 +4,10 @@ public class Demo01 {
         xiaoming.setName("小明");
         xiaoming.setAge(20);
         System.out.println("名字：" + xiaoming.getName() + "+年龄：" + xiaoming.getAge());
+        Person test = new Person();
+        test.setName("theTester");
+        test.setAge(200);
+        System.out.println("名字：" + test.getName() + "+年龄：" + test.getAge());
     }
     
 }
@@ -20,6 +24,10 @@ class Person{
         return this.age;
     }
     public void setAge(int age){
-        this.age = age;
+        if (age >= 0 && age <= 150) {
+            this.age = age;
+        } else {
+            System.out.println("不正确的年龄！");
+        }
     }
 }
