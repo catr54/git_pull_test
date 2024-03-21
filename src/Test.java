@@ -1,6 +1,10 @@
 public class Test {
-    public static void main(String[] args) {
-        String s1 = "Hello";
+    public static void main(String[] args){
+        System.out.println("this is a simple java program");
+    } 
+    
+    {
+        /*String s1 = "Hello";
         String s2 = "world";
         String s = s1 + " " + s2 + "!";
         System.out.println(s);
@@ -10,6 +14,9 @@ public class Test {
             int x = q >>> i;
             System.out.println(x + "      " + Integer.toBinaryString(x));
         }
+        */
+        var strs1 = new String[10];
+
     }
 }
 
