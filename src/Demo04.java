@@ -3,6 +3,7 @@ public class Demo04 {
     {
         Student xiaoli = new Student(20,"小李",80);
         System.out.println(xiaoli.getAge() + xiaoli.getName() + xiaoli.getScore());
+        xiaoli.run();
         Student xiaodai = new Student();
         System.out.println(xiaodai.getAge() + xiaodai.getName() + xiaodai.getScore());
     //转型
@@ -16,6 +17,12 @@ public class Demo04 {
 class Student extends Person{
     //继承只可以是is关系，has关系应该用组合，即持有一个想要"继承"的实例
     private int score = 60;
+    //override Run方法
+    @Override
+    public void run(){
+        System.out.println("student run");
+    }
+    //Override和Overload不同的是，如果方法签名不同，就是Overload，Overload方法是一个新方法；如果方法签名相同，并且返回值也相同，就是Override
     public Student(){
     }
     public Student(int age,String name,int score){

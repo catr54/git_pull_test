@@ -17,6 +17,9 @@ public class Demo01 {
 class Person{    
     protected String name;
     protected int age;
+    public void run(){
+        System.out.println("person running");
+    }
     public Person(){
     }//空构造方法
     public Person(String name , int age){
