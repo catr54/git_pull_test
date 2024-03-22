@@ -1,5 +1,4 @@
 import javax.management.NotCompliantMBeanException;
-
 public class Demo01 {
     public static void main(String[] args){
         Person xiaoming = new Person();
@@ -16,8 +15,8 @@ public class Demo01 {
     
 }
 class Person{    
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
     public Person(){
     }//空构造方法
     public Person(String name , int age){
