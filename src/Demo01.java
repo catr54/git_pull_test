@@ -1,3 +1,5 @@
+import javax.management.NotCompliantMBeanException;
+
 public class Demo01 {
     public static void main(String[] args){
         Person xiaoming = new Person();
@@ -8,6 +10,8 @@ public class Demo01 {
         test.setName("theTester");
         test.setAge(200);
         System.out.println("名字：" + test.getName() + "+年龄：" + test.getAge());
+        Person onlyname = new Person("noname");
+        System.out.println(onlyname.getName() + onlyname.getAge());
     }
     
 }
@@ -15,11 +19,15 @@ class Person{
     private String name;
     private int age;
     public Person(){
-    }
+    }//空构造方法
     public Person(String name , int age){
         this.name = name;
         this.age = age;
-    }
+    }//带参数构造方法，多构造方法
+    public Person(String name){
+        this(name,18);
+    }//this复用方法
+    //構造方法重載
     public String getName(){
         return this.name;
     }
