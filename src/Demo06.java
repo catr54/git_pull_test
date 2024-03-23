@@ -9,8 +9,8 @@ interface Person{
     String getName;
 }
 当一个具体class实现interface时要用implements
-在interface里面的变量都是public static final的
-即不能出现变量必须为常量
+在interface里面的变量都是public static final的，即不能出现变量必须为常量
+因此psf可以省略，编译器会自动补上
 一个类可以实现多个接口，只能继承一个类
 接口之间可以继承，相当于扩展了接口的方法
 接口中可以定义default方法，实现类不必覆写default方法
